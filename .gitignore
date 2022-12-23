@@ -22,6 +22,9 @@
 *.txt
 *.doc
 *.docx
+*.pdf
+*.ai
+*.webp
 
 # Logs and databases #
 ######################
