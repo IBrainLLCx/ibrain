@@ -114,7 +114,6 @@ a:visited {
 .navbar-brand > img {
     max-width: 127px;
     z-index: 9999;
-    transform: translateX(-20px);
 }
 @media (max-width: 768px) {
     .navbar-brand {
