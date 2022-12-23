@@ -27,7 +27,7 @@
             <div class="nav-content hideNav hidden">
                <ul class="nav-list vcenter">
                   <li class="nav-item"><a class="item-anchor" href="/">Home</a></li>
-                  <li class="nav-item"><a class="item-anchor" href="about.html">About Me</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">About Us</a></li>
                   <!-- <li class="nav-item"><a class="item-anchor" href="portfolio.html">Projects</a></li> -->
                   <li class="nav-item"><a class="item-anchor" href="contact.html">Contact</a></li>
                </ul>
@@ -44,21 +44,25 @@
                      less is beautiful
                   </h1>
                   <br>
-                  <img class="img-responsive margin-top-45" src="img/4.jpg" alt="me">
+                  <img src="img/4.jpg" alt="me" class="img-fluid margin-top-45" width="80%" style="margin: 0 auto;">
                </div>
             </div>
             <br>
             <div class="row margin-top-45">
                <div class="col-md-3">
-                  <h2>My story</h2>
+                  <h2>Our story</h2>
                </div>
                <div class="col-md-9">
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
+                     IBrain Technology was founded by two friends from Ecuador who met in high school at a military school. They were passionate about technology and the future of the world, and were determined to create a company that would bring the future to homes through the design of smart houses and the development of personalized software for small businesses.
                   </p>
                   <br>
                   <p>  
-                     Etiam at consectetur sapien, vel laoreet diam. Aliquam erat volutpat. Quisque fermentum purus ac justo fermentum vulputate eu id libero. Donec quam ipsum, malesuada nec interdum in, commodo vel nisl. Aliquam erat volutpat. Donec suscipit molestie urna, at pharetra tortor interdum eget. Ut lobortis viverra ex, quis faucibus sapien iaculis in. Suspendisse laoreet ornare justo sit amet fermentum. Pellentesque non nulla id libero pretium bibendum vel nec dolor. 
+                     After completing their education, the founders moved to the United States with the goal of pursuing their professional development and careers in the technology industry. They worked hard to build their skills and knowledge, and eventually decided to start their own company, IBrain Technology.
+                  </p>
+                  <br>
+                  <p>
+                     Despite facing many challenges along the way, the founders of IBrain Technology have remained dedicated to their vision of creating a better future through technology. Their hard work and determination have paid off, as the company has grown into a successful and respected business in the tech industry.
                   </p>
                </div>
             </div>
@@ -67,12 +71,19 @@
                   <h2>Services</h2>
                </div>
                <div class="col-md-9">
-                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula libero auctor dolor vulputate varius. Nunc ac nisl non felis finibus ultricies. Donec at porttitor lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin volutpat augue ex. In hac habitasse platea dictumst. Suspendisse at ante ligula. Nulla facilisis velit egestas massa imperdiet, id posuere turpis feugiat.
-                  </p>
+                  <div class="services">
+                     <div class="card">
+                       <h3>Smart Home Design and Implementation</h3>
+                       <p>We specialize in designing and implementing smart home systems that seamlessly integrate technology into your home. Our team of experts will work with you to understand your needs and preferences, and will create a customized plan to bring your smart home vision to life.</p>
+                     </div>
+                     <div class="card">
+                       <h3>Software Development</h3>
+                       <p>We specialize in custom software development for businesses of all sizes. Our team of experienced developers has a proven track record of creating high-quality software solutions that meet the unique needs of our clients.</p>
+                     </div>
+                   </div>
                </div>
             </div>
-            <div class="row margin-top-45">
+            <!-- <div class="row margin-top-45">
                <div class="col-md-3">
                   <h2>Clients</h2>
                </div>
@@ -104,11 +115,13 @@
                      </div>
                   </div>
                </div>
-            </div>
+            </div> -->
          </div>
       </section>
       <!-- script -->
+      <canvas id="snow-canvas"></canvas>
       <script src="js/jquery.js"></script>
+      <script src="js/snow.js" async></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/modernizr.js"></script>
       <script src="js/script.js"></script>
