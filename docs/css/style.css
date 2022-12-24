@@ -105,6 +105,15 @@ a:visited {
     float: right;
     z-index: 99999;
 }
+
+nav a {
+    display: inline-block; /* Display the links as inline blocks */
+  }
+
+.navbar-nav li a {
+    font-size: smaller;
+ }
+
 .navbar-fixed-top {
     padding-top: 10px;
 }
@@ -655,3 +664,7 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+/* ANOTHER NAV BAR  */
+
+
