@@ -367,12 +367,13 @@ nav a {
 
 /*---------- Menu Icon Animation ----------*/
 
-.navbar-toggle * {
+ .navbar-toggle * {
     -ms-transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
+      
 }
 .navbar-toggle {
     border: medium none;
@@ -385,6 +386,10 @@ nav a {
     float: right;
     margin-top: 0px;
     margin-bottom: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -439,7 +444,7 @@ nav a {
     -webkit-transform: none;
     transform: none;
     width: 30px;
-}
+} 
 
 /*---------- Header ----------*/
 
