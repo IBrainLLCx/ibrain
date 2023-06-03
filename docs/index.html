@@ -33,6 +33,10 @@
         <h2>Projects</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
+      <div class="box">
+        <h2>Projects</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
     </div>
     <div class="section section2 scrollable">
       <div class="box">
@@ -47,5 +51,22 @@
       </div>
     </div>
   </div>
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var sectionElements = document.querySelectorAll('.section');
+
+      sectionElements.forEach(function(sectionElement) {
+        var boxElements = sectionElement.querySelectorAll('.box');
+        if (boxElements.length > 5) {
+          sectionElement.classList.add('disabled-justify');
+        } else {
+          sectionElement.classList.remove('disabled-justify');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

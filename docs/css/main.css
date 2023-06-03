@@ -8,16 +8,12 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  overflow: hidden;
-  background: white;
-  min-height: 100vh;
   max-width: 100%;
-  overflow: hidden;
 }
 
 .container {
+  min-height: 100vh; /* Set minimum height to viewport height */
   display: flex;
-  height: 100vh;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -36,7 +32,7 @@ html, body {
 }
 
 .scrollable {
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .scrollable::-webkit-scrollbar {
@@ -47,6 +43,10 @@ html, body {
 .scrollable::-webkit-scrollbar-thumb {
   background-color: #FFFFFF;
   border-radius: 1px;
+}
+
+.section.scrollable.disabled-justify {
+  justify-content: flex-start;
 }
 
 .box {
@@ -72,6 +72,14 @@ html, body {
 
 .section:nth-child(3) {
   background-color: #FFFFFF;
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom of the container */
 }
 
 /* Media Query for mobile devices */
