@@ -54,19 +54,6 @@
   <footer>
     <p>&copy; 2023 My Portfolio. All rights reserved.</p>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var sectionElements = document.querySelectorAll('.section');
-
-      sectionElements.forEach(function(sectionElement) {
-        var boxElements = sectionElement.querySelectorAll('.box');
-        if (boxElements.length > 5) {
-          sectionElement.classList.add('disabled-justify');
-        } else {
-          sectionElement.classList.remove('disabled-justify');
-        }
-      });
-    });
-  </script>
+  <script src="js/box_disable.js"></script>
 </body>
 </html>
