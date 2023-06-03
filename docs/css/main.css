@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  background: white;
+  min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: flex-start; */
+  margin-bottom: 20px; /* Add margin to create separation between sections */
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 0.1em;
+  background-color: transparent;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border-radius: 1px;
+}
+
+.box {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 10px;
+}
+
+/* Assign background colors to each section */
+.section:nth-child(1) {
+  background-color: #FFFFFF;
+}
+
+.section:nth-child(2) {
+  background-color: #CCCCCC;
+}
+
+.section:nth-child(3) {
+  background-color: #FFFFFF;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .section {
+    height: auto;
+  }
+}
