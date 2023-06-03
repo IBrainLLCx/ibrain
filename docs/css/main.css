@@ -23,7 +23,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   flex-direction: column;
   margin-bottom: 20px; /* Add margin to create separation between sections */
 }
@@ -92,11 +91,33 @@ p {
 
 /* Media Query for mobile devices */
 @media (max-width: 800px) {
+
   .container {
     flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set container height */
   }
 
   .section {
-    height: auto;
+    margin-right: 30px;
+    white-space: normal;
+    width: 300px; /* Adjust the width as needed */
+    height: 100%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    width: 100vw;
+  }
+
+  .box {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 10px;
   }
 }
