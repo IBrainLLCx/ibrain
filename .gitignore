@@ -37,6 +37,7 @@
 .DS_Store
 .DS_Store?
 ._*
+.vscode
 .idea
 .Spotlight-V100
 .Trashes
